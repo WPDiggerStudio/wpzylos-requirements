@@ -1,0 +1,93 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * Requirements Configuration
+ *
+ * Defines the minimum requirements for this plugin to function.
+ * Publish this file using the RequirementsServiceProvider::publishConfig() method.
+ *
+ * @package YourPlugin
+ */
+
+return [
+    /*
+    |--------------------------------------------------------------------------
+    | Minimum PHP Version
+    |--------------------------------------------------------------------------
+    |
+    | The minimum PHP version required to run this plugin. Common values:
+    | - '8.0' for PHP 8.0+
+    | - '8.1' for PHP 8.1+
+    | - '8.2' for PHP 8.2+
+    |
+    */
+    'min_php_version' => '8.1',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Minimum WordPress Version
+    |--------------------------------------------------------------------------
+    |
+    | The minimum WordPress version required. WordPress 6.0+ is recommended
+    | for modern plugin development.
+    |
+    */
+    'min_wp_version' => '6.0',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Multisite Compatibility
+    |--------------------------------------------------------------------------
+    |
+    | Set to true if your plugin is compatible with WordPress Multisite.
+    | Set to false to prevent activation on multisite installations.
+    |
+    */
+    'is_multisite_compatible' => true,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Required PHP Extensions
+    |--------------------------------------------------------------------------
+    |
+    | List of PHP extensions that must be loaded for the plugin to work.
+    | Common extensions: json, mbstring, curl, xml, zip, openssl
+    |
+    */
+    'php_extensions' => [
+        'json',
+        'mbstring',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Required Plugins
+    |--------------------------------------------------------------------------
+    |
+    | List of WordPress plugins that must be installed and active.
+    |
+    | Format:
+    | 'Plugin Display Name' => [
+    |     'plugin_slug'        => 'folder/file.php',
+    |     'min_plugin_version' => '1.0.0', // optional
+    | ],
+    |
+    | Examples:
+    | 'WooCommerce' => [
+    |     'plugin_slug'        => 'woocommerce/woocommerce.php',
+    |     'min_plugin_version' => '8.0.0',
+    | ],
+    | 'Advanced Custom Fields' => [
+    |     'plugin_slug' => 'advanced-custom-fields/acf.php',
+    | ],
+    |
+    */
+    'required_plugins' => [
+        // 'WooCommerce' => [
+        //     'plugin_slug'        => 'woocommerce/woocommerce.php',
+        //     'min_plugin_version' => '8.0.0',
+        // ],
+    ],
+];
